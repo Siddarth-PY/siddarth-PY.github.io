@@ -1,0 +1,10 @@
+# Python virtual environment
+.myvenv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Backend python files
+contact/backend/
+*.py
