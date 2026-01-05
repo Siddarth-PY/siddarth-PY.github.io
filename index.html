@@ -6,26 +6,59 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
+ <nav class="navbar">
   <h2 class="logo">Siddarth</h2>
-  <ul>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
+
+  <ul class="nav-links">
+    <!-- <li><a href="index.html">Home</a></li> -->
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
+<div class="contact-icons">
+  <div class="nav-contact">
+    <a href="mailto:siddarthmofficial@gmail.com" title="Email">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email" class="icon">
+      <span>Email: siddarthmofficial@gmail.com</span>
+    </a>
+    <a href="https://github.com/Siddarth-PY" target="_blank" title="GitHub">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon">
+      <span>GitHub</span>
+    </a>
+    <a href="https://www.linkedin.com/in/siddarth-m-43ba61246" target="_blank" title="LinkedIn">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="icon">
+      <span>LinkedIn</span>
+    </a>
+  </div>
+</div>
+
 </nav>
 
 
-<header class="header">
-  <img src="images/profile.jpg" alt="Siddarth" class="profile-img">
 
-  <div class="header-text">
-    
-    <h1>Siddarth M</h1>
-    <p>Python Developer | Django | FastAPI</p>
-    <a href="resume.pdf" download class="btn">Download Resume</a>
+<header class="header">
+  <div class="header-content">
+    <img src="images/profile.jpg" alt="Siddarth" class="profile-img">
+
+    <div class="header-text">
+      <h1>Siddarth M</h1>
+      <p>Python Developer | Django | FastAPI | Flask | RESTAPI | SQL | CSS |JS </p>
+      <a href="Resume/Siddarth_M_Resume.pdf" download class="btn">Download Resume</a>
+    </div>
   </div>
+  <div class="card">
+  <h3>Django Employee App</h3>
+  <p>CRUD application using Django & MySQL</p>
+
+  <div class="project-links">
+    <a href="https://your-live-site.com" target="_blank">Live Demo</a>
+    <a href="https://github.com/your-repo" target="_blank">Source Code</a>
+    
+    
+  </div>
+</div>
 </header>
+
 
 <section id="projects" class="projects">
   <h2>Projects</h2>
@@ -46,27 +79,134 @@
   <section class="card">
     <h2>About Me</h2>
     <p>
-      Python Developer with experience in Django, FastAPI, REST APIs,
-      SQL/MySQL, HTML, CSS, and JavaScript.
-      Passionate about backend and full-stack development.
+     Experienced Software and Systems Engineer with 5+ years 
+     in system and software development. Full Stack Developer with strong backend 
+     expertise in Python and Django, and hands-on experience building responsive frontends. 
+     Proven ability to design RESTful APIs, optimize databases, and 
+     deliver scalable applications
+
     </p>
   </section>
+  
+<section id="skills" class="skills-section">
+  <h2 class="section-title">Skills</h2>
 
-  <section class="card">
-    <h2>Projects</h2>
+  <div class="skills-layout">
+
+    <!-- LEFT SIDE -->
+    <div class="skills-left">
+
+      <!-- Programming -->
+      <div class="skill-group">
+        <h3>Programming</h3>
+        <div class="skills-grid">
+          <div class="skill-card">Python</div>
+          <div class="skill-card">C</div>
+          <div class="skill-card">JavaScript</div>
+        </div>
+      </div>
+
+      <!-- Databases (NOW LEFT) -->
+      <div class="skill-group">
+        <h3>Databases</h3>
+        <div class="skills-grid">
+          <div class="skill-card">MySQL</div>
+          <div class="skill-card">PostgreSQL</div>
+          <div class="skill-card">SQLite</div>
+        </div>
+      </div>
+
+      <!-- Tools & Frameworks -->
+      <div class="skill-group">
+        <h3>Tools & Frameworks</h3>
+        <div class="skills-grid">
+          <div class="skill-card">Django</div>
+          <div class="skill-card">FastAPI</div>
+          <div class="skill-card">REST API</div>
+          <div class="skill-card">Git & GitHub</div>
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+        </div>
+      </div>
+
+    </div>
+  <div class="skills-right">
+
+  <h3>What I Work With</h3>
+  <ul class="skill-points">
+    <li>✔ Backend development using Python</li>
+    <li>✔ RESTful APIs with Django & FastAPI</li>
+    <li>✔ Database design & optimization</li>
+    <li>✔ Clean, maintainable code practices</li>
+    <li>✔ Git-based version control</li>
+  </ul>
+
+  <!-- Interests -->
+  <div class="interest-box">
+    <h4>Interests</h4>
+    <p>
+      Artificial Intelligence, Data Analysis, API Architecture,
+      and building scalable backend systems.
+    </p>
+  </div>
+
+  <!-- Self Learning -->
+  <div class="learning-box">
+    <h4>Self-Learning & Growth</h4>
     <ul>
-      <li>Django Employee Management System</li>
-      <li>FastAPI REST API Project</li>
-      <li>Creating commericial Websites</li>
+      <li>📘 Exploring AI fundamentals & ML concepts</li>
+      <li>📊 Learning data analysis with Python</li>
+      <li>🧠 Practicing problem-solving & system design</li>
     </ul>
-  </section>
+  </div>
+<p class="ats-hidden">
+Backend Developer skilled in Python, Django, FastAPI, REST API development,
+database design using PostgreSQL and MySQL, and version control with Git and GitHub.
+</p>
+</div>
 
+
+<!-- 
   <section class="card">
     <h2>Contact</h2>
     <p>Email: siddarthmofficial@gmail.com</p>
     <p>GitHub: <a href="https://github.com/Siddarth-PY" target="_blank">Siddarth-PY</a></p>
     <p>linkedin:<a href="https://www.linkedin.com/in/siddarth-m-43ba61246" target="_blank"> Siddarth/profile/linkedin</a></p>
-  </section>
+  </section> -->
+<!-- 
+ <section id="contact" class="contact">
+  <h2>Contact Me</h2>
+
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <p id="form-status"></p>
+</section>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    const response = await fetch("http://127.0.0.1:8000/contact", {
+      method: "POST",
+      body: formData
+    });
+
+    const result = await response.json();
+    document.getElementById("form-status").innerText =
+      result.message || result.error;
+  });
+</script> -->
+
+<script src="script.js"></script>
+
 
 </body>
 </html>

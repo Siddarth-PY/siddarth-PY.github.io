@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Siddarth</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <h2 class="logo">Siddarth</h2>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="contact-page">
+  <div class="contact-box">
+
+    <h1>Let’s Connect 👋</h1>
+    <p>Have a project or question? Feel free to message me.</p>
+
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+
+    <p id="form-status"></p>
+
+  </div>
+</section>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    const response = await fetch("http://127.0.0.1:8000/contact", {
+      method: "POST",
+      body: formData
+    });
+
+    const result = await response.json();
+    document.getElementById("form-status").innerText =
+      result.success ? "✅ Message sent successfully!" : "❌ Failed to send message";
+  });
+</script>
+
+</body>
+</html>
