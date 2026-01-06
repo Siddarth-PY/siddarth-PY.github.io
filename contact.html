@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact | Siddarth</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <nav class="navbar">
   <h2 class="logo">Siddarth</h2>
-  <ul>
+  <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="index.html#projects">Projects</a></li>
     <li><a href="contact.html" class="active">Contact</a></li>
@@ -26,7 +27,6 @@
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Your Message" required></textarea>
-
       <button type="submit" class="btn">Send Message</button>
     </form>
 
@@ -34,6 +34,42 @@
 
   </div>
 </section>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+(function () {
+  emailjs.init("XLPf_seEroIba6u_p"); // PUBLIC KEY
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  document.getElementById("form-status").innerText = "Sending...";
+
+  emailjs.sendForm(
+    "service_iw5kn2n",
+    "template_wtjrdxj",
+    this
+  ).then(
+    function () {
+      document.getElementById("form-status").innerText =
+        "✅ Message sent successfully!";
+      document.getElementById("contact-form").reset();
+    },
+    function (error) {
+      document.getElementById("form-status").innerText =
+        "❌ Failed to send message.";
+      console.error(error);
+    }
+  );
+});
+</script>
+
+</body>
+</html>
+
 
 <!-- <script>
   document.getElementById("contact-form").addEventListener("submit", async function(e) {

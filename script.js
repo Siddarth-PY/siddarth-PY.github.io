@@ -1,5 +1,6 @@
 console.log("Portfolio loaded successfully");
 
+
 {/* <script>
  document.getElementById("contact-form").addEventListener("submit", async function (e) { }
   e.preventDefault();
