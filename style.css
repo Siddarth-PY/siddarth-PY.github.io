@@ -507,7 +507,7 @@ html {
     flex-direction: column;
     align-items: center;
     padding: 12px 16px;   /* overrides 100px desktop padding */
-    gap: 10px;
+    gap: 14px;
   }
 
   .nav-links {
@@ -601,19 +601,43 @@ html {
 /* EXTRA SMALL PHONES */
 @media (max-width: 480px) {
 
-  .logo {
-    font-size: 18px;
+   .navbar {
+    flex-direction: column;
+    align-items: left;
+    padding: 5px 9px;
+  }
+ .logo {
+    margin-bottom: 10px;   /* small gap below logo */
+    text-align: center;
+  }
+   .nav-links {
+    width: 75%;
+    display: flex;
+    justify-content: left;   /* horizontal center */
+    align-items: left;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    gap:28px;
+  }
+
+   .nav-links li {
+    list-style: none;
   }
 
   .nav-links a {
-    font-size: 14px;
+    font-size: 16px;
+    padding: 6px 0;
+    text-align: center;
   }
 
-  h2 {
-    font-size: 22px;
+  /* Contact icons stay below nav links */
+  .contact-icons {
+    margin-top: 14px;
   }
 
-  .section-title {
-    font-size: 24px;
+  .nav-contact {
+    justify-content: left;
   }
 }
+
