@@ -1,6 +1,7 @@
 console.log("Portfolio loaded successfully");
-<script>
-document.getElementById("contact-form").addEventListener("submit", async function (e) {
+
+{/* <script>
+ document.getElementById("contact-form").addEventListener("submit", async function (e) { }
   e.preventDefault();
 
   const status = document.getElementById("form-status");
@@ -30,4 +31,4 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     console.error(err);
   }
 });
-</script>
+</script> */}
