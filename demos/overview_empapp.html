@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Django Employee App | Project Overview</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      background-color: #f8fafc;
+    }
+    .hero {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: #fff;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    .badge-tech {
+      background: #020617;
+      color: #38bdf8;
+      border: 1px solid #38bdf8;
+      margin: 4px;
+    }
+    .section {
+      padding: 60px 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">MILEVIEEN</a>
+    <a href="../index.html" class="btn btn-outline-primary btn-sm">
+      Back to Portfolio
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Django Employee Management System</h1>
+  <p class="mt-3">
+    A full-stack web application for managing employee records using Django and MySQL.
+  </p>
+</section>
+
+<!-- FEATURES -->
+<section class="section container">
+  <h2 class="mb-4">Key Features</h2>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">✔ User authentication (Login / Signup)</li>
+    <li class="list-group-item">✔ Create, update, and delete employee records</li>
+    <li class="list-group-item">✔ Role-based access control</li>
+    <li class="list-group-item">✔ Secure form handling with CSRF protection</li>
+    <li class="list-group-item">✔ Responsive UI using Bootstrap</li>
+  </ul>
+</section>
+
+<!-- TECH STACK -->
+<section class="section container">
+  <h2 class="mb-4">Tech Stack</h2>
+
+  <span class="badge badge-tech">Python</span>
+  <span class="badge badge-tech">Django</span>
+  <span class="badge badge-tech">MySQL</span>
+  <span class="badge badge-tech">HTML</span>
+  <span class="badge badge-tech">CSS</span>
+  <span class="badge badge-tech">Bootstrap</span>
+</section>
+
+<!-- ARCHITECTURE -->
+<section class="section container">
+  <h2 class="mb-4">How It Works</h2>
+  <p>
+    The frontend renders user interfaces using Django templates and Bootstrap.
+    User actions trigger Django views, which process business logic and interact
+    with the MySQL database via Django ORM.
+  </p>
+  <p>
+    Authentication and authorization are handled using Django’s built-in auth system.
+  </p>
+</section>
+
+<!-- CTA -->
+<section class="section text-center">
+  <a
+    href="https://github.com/Siddarth-PY/Employee_app_django"
+    class="btn btn-primary me-3"
+    target="_blank"
+  >
+    View Source Code
+  </a>
+
+  <a
+    href="#"
+    class="btn btn-outline-secondary"
+    onclick="alert('Backend API project. See code & documentation.')"
+  >
+    API Demo
+  </a>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center text-muted py-4">
+  Demo only • Backend code available on GitHub
+</footer>
+
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
